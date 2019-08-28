@@ -5,7 +5,7 @@ pipeline {
             steps {
                     git branch: 'master',
             credentialsId: 'sajai2',
-            url: 'git@github.com:sajai2/Sample.git'
+            url: 'https://github.com/sajai2/Sample.git'
                 timeout(time: 3, unit: 'MINUTES') {
                     retry(5) {
                         sh './test.sh'
