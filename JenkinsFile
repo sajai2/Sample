@@ -6,6 +6,7 @@ pipeline {
                                     timeout(time: 3, unit: 'MINUTES') {
                     retry(5) {
                         echo "Saloni"
+                        sh ls -al
                     }
                 }
             }
